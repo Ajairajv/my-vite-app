@@ -1,19 +1,12 @@
-import React from 'react'
-import Firstpage from './Firstpage'
-import SecondPage from './SecondPage'
+import React from 'react';
+import { MyForm } from './Myform';
 
 const App = () => {
   return (
-    <div>
-      hello world
-
-
-      <Firstpage/>
-      <SecondPage/>
+    <div style={{textAlign:"center"}}>
+      <MyForm  onSubmit={()=>{}} />
     </div>
   )
 }
 
 export default App
-
-
