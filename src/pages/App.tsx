@@ -1,10 +1,9 @@
-import React from 'react';
-import { MyForm } from './Myform';
+import RoutePages from '../routes/Routes';
 
 const App = () => {
   return (
     <div style={{textAlign:"center"}}>
-      <MyForm  onSubmit={()=>{}} />
+      <RoutePages />
     </div>
   )
 }
