@@ -13,7 +13,7 @@ interface Props {
   onSubmit: (values: Values) => void;
 }
 
-export const MyForm: React.FC<Props> = ({ onSubmit }) => {
+export const MyForm: React.FC<Props> = ({  }) => {
   const navigate = useNavigate();
 
   const handleFormSubmit = (values: Values) => {

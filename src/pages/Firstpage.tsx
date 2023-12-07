@@ -41,10 +41,16 @@ const Firstpage: React.FC = () => {
       <DataGrid
         rows={data}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5, 10, 20]}
+        initialState={{
+          pagination: {
+            paginationModel: {
+              pageSize: 5,
+            },
+          },
+        }}
+        pageSizeOptions={[5,10,15]}
         checkboxSelection
-        disableSelectionOnClick
+        disableRowSelectionOnClick
       /> 
       <>
       <SecondPage/>
